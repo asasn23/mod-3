@@ -22,6 +22,10 @@ body {
     text-align: center;
 }
 
+section {
+    padding: 90px;
+}
+
 /* Navigation */
 
 nav {
@@ -98,4 +102,79 @@ header h1 {
     border-color: $color-three;
     color: $color-three;
     background-image: linear-gradient(90deg, $color-two 50%, transparent 50%);
+}
+
+/* Service */
+
+.service {
+    padding-top: 120px;
+
+    i {
+        border: solid $color-two;
+        color: $color-two;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        font-size: 35px;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h2 {
+        font-size: 69px;
+        margin: 0;
+
+    }
+    p  {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+}
+
+/* OUR PORTFOLIO */
+
+.our-portfolio {
+    background-color: #e0e0e0;
+
+    .box {
+        margin-bottom: 40px;
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        margin: auto;
+    }
+
+    .description {
+        background: #e0e0e0;
+        text-align: center;
+        padding: 23px;
+        width: 300px;
+        margin: auto;
+
+        p {
+            margin: 0;
+        }
+    }
+    h3 {
+        margin: 0;
+    }
+    .row {
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-size: 69px;
+        margin: 0;
+
+    }
+    p  {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
 }
