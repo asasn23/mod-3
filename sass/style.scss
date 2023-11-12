@@ -1,0 +1,101 @@
+/* Variables */
+$color-one: #718093;
+$color-two: #fbc531;
+$color-three: #ffffff;
+$transition: all 1s;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Inconsolata', monospace;
+    color: $color-one;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Navigation */
+
+nav {
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            color: $color-three;
+            font-size: 18px;
+            margin: 0 0 0 40px;
+        }
+    }
+}
+
+.brand {
+    color: $color-two;
+    font-size: 30px;
+}
+
+/* Header */
+
+header {
+    background-image: url("../images/1.jpg");
+}
+
+header .container {
+    display: block;
+    position: relative;
+    padding: 310px 0 220px 0;
+}
+
+header h2 {
+    font-size: 50px;
+    margin: 0;
+    color: $color-three;
+}
+
+header h1 {
+    font-size: 90px;
+    margin: 0;
+    color: $color-three;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-color: $color-two;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    border-color: $color-three;
+    color: $color-three;
+    background-image: linear-gradient(90deg, $color-two 50%, transparent 50%);
+}
